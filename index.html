@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipe 2 - Projeto HBO Max</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- biblioteca de icones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+
+  <body>
+    <!-- CABEÇALHO / MENU NAVEGAÇÃO 
+  -- MARCOS -->
+
+    <header id="cabecalho">
+      <a href="/" id="hamburger-menu">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </a>
+      <div class="box-nav">
+        <a href="/" class="logo">
+          <img
+            src="./arquivos_necessarios/max_logo.png"
+            alt=""
+            width="110"
+            height="30"
+          />
+        </a>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="/" class="btn btn-secondary">Filmes</a></li>
+            <li><a href="/" class="btn btn-secondary">Séries de TV</a></li>
+            <li>
+              <a href="/" class="btn btn-secondary">Crianças e Família</a>
+            </li>
+            <li><a href="/" class="btn btn-secondary">Marcas</a></li>
+            <li><a href="/" class="btn btn-secondary">Episódios Grátis</a></li>
+            <li><a href="/" class="btn btn-secondary">Futebol</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a href="#" class="btn btn-secondary">Entrar</a>
+      <a href="#" class="btn btn-primary">Assine Agora</a>
+    </header>
+
+    <main>
+      <!--
+            * adicione efeitos ao passar o mouse sobre (pode escolher ou fazer como no site oficial)
+            *
+            *
+        -->
+      <!-- **/FIM CABEÇALHO ****************************************************** RESPONSÁVEL -->
+
+      <!-- CAPA -->
+      <!-- CAPA IMAGEM -->
+      <div class="sessao-capa">
+        <section id="capa">
+          <div id="img-capa">
+            <h1>
+              <img
+                src="./arquivos_necessarios/max_logo_branco.png"
+                alt="MAX"
+                width="350"
+              />
+            </h1>
+          </div>
+          <div class="planos">
+            <span> Planos a partir de <span>R$18,90/mês<span></span>
+          </div>
+          <a class="btn btn-primary" href="#">Assine Agora</a>
+        </section>
+      </div>
+      <!-- **/FIM CAPA ****************************************************** RESPONSÁVEL -->
+
+      <!-- PLANOS -->
+      <div class="box-plan">
+        <h2 class="title title-plan">Escolha o melhor plano para você</h2>
+        <div class="area-plans">
+          <!-- <span class="msg-plan"> Economize até 36% </span> -->
+          <div class="togle-btn">
+            <label class="btn-secondary" for="monthly-plan">Mensal</label>
+            <label class="btn-secondary" for="annual-plan"
+              >Anual Parcelado</label
+            >
+          </div>
+          <input
+            type="radio"
+            name="plan-type"
+            id="monthly-plan"
+            hidden
+            checked
+          />
+          <div class="all-plans">
+            <div class="cards-plan">
+              <h3>Básico com Anúncios</h3>
+              <h4>R$29,90<em>mês</em></h4>
+              <ul class="benefit-plan">
+                <li class="device-qty">
+                  <strong>2 dispositivos</strong> ao mesmo tempo
+                </li>
+                <li class="resolution">Resolução <strong>Full HD</strong></li>
+              </ul>
+              <a class="btn btn-aux" href="">Escolha seu plano</a>
+            </div>
+            <div class="cards-plan">
+              <h3>Standard</h3>
+              <h4>R$39,90<em>mês</em></h4>
+              <ul class="benefit-plan">
+                <li class="device-qty">
+                  <strong>2 dispositivos</strong> ao mesmo tempo
+                </li>
+                <li class="resolution">Resolução <strong>Full HD</strong></li>
+                <li class="downloads">
+                  <strong>30 Dowloads</strong> para curtir off-line
+                </li>
+              </ul>
+              <a class="btn btn-aux" href="">Escolha seu plano</a>
+            </div>
+            <div class="cards-plan">
+              <h3>Platinum</h3>
+              <h4>R$55,90<em>mês</em></h4>
+              <ul class="benefit-plan">
+                <li class="device-qty">
+                  <strong>4 dispositivos</strong> ao mesmo tempo
+                </li>
+                <li class="resolution">Resolução <strong>Full HD</strong></li>
+                <li class="audio">Áudio <strong>Dolby Atmos</strong></li>
+                <li class="downloads">
+                  <strong>100 Dowloads</strong> para curtir off-line
+                </li>
+              </ul>
+              <a class="btn btn-aux" href="">Escolha seu plano</a>
+            </div>
+          </div>
+
+          <input type="radio" name="plan-type" id="annual-plan" hidden />
+          <div class="all-plans">
+            <div class="cards-plan">
+              <h3>Básico com Anúncios</h3>
+              <h4>12x R$18,90<em>mês</em></h4>
+              <p class="sub-title">Preço total anual R$226,80</p>
+              <ul class="benefit-plan">
+                <li class="device-qty">
+                  <strong>2 dispositivos</strong> ao mesmo tempo
+                </li>
+                <li class="resolution">Resolução <strong>Full HD</strong></li>
+              </ul>
+              <a class="btn btn-aux" href="">Escolha seu plano</a>
+            </div>
+            <div class="cards-plan">
+              <h3>Standard</h3>
+              <h4>12x R$29,90<em>mês</em></h4>
+              <p class="sub-title">Preço total anual R$358,80</p>
+              <ul class="benefit-plan">
+                <li class="device-qty">
+                  <strong>2 dispositivos</strong> ao mesmo tempo
+                </li>
+                <li class="resolution">Resolução <strong>Full HD</strong></li>
+                <li class="downloads">
+                  <strong>30 Dowloads</strong> para curtir off-line
+                </li>
+              </ul>
+              <a class="btn btn-aux" href="">Escolha seu plano</a>
+            </div>
+            <div class="cards-plan">
+              <h3>Platinum</h3>
+              <h4>12x R$39,90<em>mês</em></h4>
+              <p class="sub-title">Preço total anual R$478,80</p>
+              <ul class="benefit-plan">
+                <li class="device-qty">
+                  <strong>4 dispositivos</strong> ao mesmo tempo
+                </li>
+                <li class="resolution">Resolução <strong>Full HD</strong></li>
+                <li class="audio">Áudio <strong>Dolby Atmos</strong></li>
+                <li class="downloads">
+                  <strong>100 Dowloads</strong> para curtir off-line
+                </li>
+              </ul>
+              <a class="btn btn-aux" href="">Escolha seu plano</a>
+            </div>
+          </div>
+          <p>
+            <small class="notice"
+              >*Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo
+              o conteúdo de cada plano. O conteúdo ao vivo nos planos Standard e
+              Platinum pode conter anúncios. Downloads podem ter restrições em
+              algumas categorias de conteúdo. Saiba mais em:
+              <a href="http://help.max.com/plans">help.max.com/plans</a>.</small
+            >
+          </p>
+        </div>
+      </div>
+
+      <!--
+            * Criar área de planos em 3 colunas, mas ao usar em um celular, ajustar para 1 coluna apenas
+            *
+            *
+        -->
+      <!-- **/FIM PLANOS ****************************************************** RESPONSÁVEL -->
+
+      <!-- ESTREIA  - RESPONSÁVEL = RONALDO-->
+      <div class="estreias">
+        <section id="estreando">
+          <div id="texto">
+            <h2>Estreias que vão dar o que falar</h2>
+          </div>
+          <div id="lancamento1">
+            <img
+              src="./arquivos_necessarios/1_estreia.avif"
+              alt="Beleza Natural"
+            />
+          </div>
+          <div id="lancamento2">
+            <img
+              src="./arquivos_necessarios/2_estreia.avif"
+              alt="The Last Of Us"
+            />
+          </div>
+          <div id="lancamento3">
+            <img
+              src="./arquivos_necessarios/3_estreia.avif"
+              alt="The White Lotus"
+            />
+          </div>
+          <div id="lancamento4">
+            <img
+              src="./arquivos_necessarios/4_estreia.avif"
+              alt="The Pit"
+              height="190px"
+            />
+          </div>
+          <div id="lancamento5">
+            <img src="./arquivos_necessarios/5_estreia.avif" alt="Mickey 17" />
+          </div>
+          <div id="lancamento6">
+            <img src="./arquivos_necessarios/6_estreia.avif" alt="Hacks" />
+          </div>
+
+          <a class="btn btn-primary estreia" href="#">Assine Agora</a>
+        </section>
+      </div>
+      <!-- **/FIM ESTREIA ****************************************************** RESPONSÁVEL -->
+    </main>
+    <!-- FOOTER - RESPONSÁVEL - RONALDO-->
+    <!--
+            * Criar área de estreias em 3 colunas, mas ao usar em um celular, ajustar para 2 colunaS apenas
+            *
+            *
+        -->
+    <div class="rodape">
+      <footer class="rodape">
+        <div class="links-rodape">
+          <ul>
+            <li><a href="#" class="btn btn-secondary">AGORA NA MAX</a></li>
+            <li><a href="#" class="btn btn-secondary">FILMES</a></li>
+            <li><a href="#" class="btn btn-secondary">SÉRIES</a></li>
+            <li><a href="#" class="btn btn-secondary">EPISÓDIOS GRÁTIS</a></li>
+            <li><a href="#" class="btn btn-secondary">FUTEBOL</a></li>
+            <li>
+              <a href="#" class="btn btn-secondary">CRIANÇAS E FAMÍLIA</a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-secondary"
+                >FILMES E SÉRIES PREMIADOS</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li><a href="#" class="btn btn-secondary">AJUDA</a></li>
+          </ul>
+          <ul class="acessos">
+            <li><a href="#" class="btn btn-secondary">ACESSIBILIDADE</a></li>
+            <li>
+              <a href="#" class="btn btn-secondary">POLÍTICA DE PRIVACIDADE</a>
+            </li>
+            <li><a href="#" class="btn btn-secondary">MODO INFANTIL</a></li>
+            <li><a href="#" class="btn btn-secondary">TERMOS DE USO</a></li>
+            <li>
+              <a href="#" class="btn btn-secondary"
+                >GERENCIAR PREFERENCIAS DE COOKIES</a
+              >
+            </li>
+          </ul>
+          <ul class="acessos">
+            <li>
+              <a href="#" class="btn btn-secondary"
+                >COMUNICADOS PARA A IMPRENSA</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          ©2025 WarnerMedia Direct Latin America, LLC. Todos os direitos
+          reservados. Max é usado sob licença.
+        </p>
+
+        <div class="social-icons">
+          <a href="#"
+            ><img src="./arquivos_necessarios/rede_facebook.png" alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img src="./arquivos_necessarios/rede_x.png" alt="X"
+          /></a>
+          <a href="#"
+            ><img src="./arquivos_necessarios/rede_tik_tok.png" alt="TikTok"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <!-- **/FIM FOOTER ****************************************************** -->
+  </body>
+</html>

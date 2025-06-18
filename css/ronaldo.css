@@ -1,0 +1,249 @@
+/* MOBILE */
+
+/* *********** SECTION CAPA ********************* */
+
+.sessao-capa {
+  /* margin-top: 60px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGEM DE FUNDO */
+#capa {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 40%),
+    url("../arquivos_necessarios/max_capa.avif");
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+  padding-top: 230px;
+  background-size: cover;
+}
+
+/* IMAGEM A FRENTE */
+#img-capa {
+  margin-top: 130px;
+  text-align: center;
+}
+
+.planos {
+  color: white;
+  font-size: 1.5rem;
+  font: normal;
+  margin: 15px;
+}
+
+/* *********** FIM SECTION CAPA ********************* */
+
+/* ESTREIAS */
+section#estreando {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "texto texto"
+    "beleza the_last"
+    "the_white the_pit "
+    "mickey hacks"
+    "estreia estreia";
+  /* ESPAÇO EXTERNO */
+  padding: 1.3rem;
+}
+
+#texto {
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+#texto h2 {
+  color: hsla(0, 0%, 100%, 0.8);
+  font-size: 1.97rem;
+  margin-bottom: 1rem;
+}
+
+section#estreando img {
+  width: 100%;
+  height: auto;
+  /* AJUSTA A IMAGEM, SEM DISTORCER O CONTEUDO */
+  object-fit: cover;
+  padding: 2px;
+}
+
+#lancamento1 {
+  grid-area: beleza;
+}
+
+#lancamento2 {
+  grid-area: the_last;
+}
+
+#lancamento3 {
+  grid-area: the_white;
+}
+
+#lancamento4 {
+  grid-area: the_pit;
+}
+
+#lancamento5 {
+  grid-area: mickey;
+}
+
+#lancamento6 {
+  grid-area: hacks;
+}
+
+.btn.btn-primary.estreia {
+  grid-area: estreia;
+  /*comentado por MARCOS*/
+  /* background-color: white;
+    color: black;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 0.758rem 1.5rem;
+    text-align: center;*/
+  margin: 0.5rem auto;
+}
+
+/*=============RODAPE==================*/
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font: normal;
+  font-size: 12px;
+  margin: 10px;
+}
+
+footer span a {
+  text-align: center;
+}
+
+.rodape {
+  width: 100%;
+  color: white;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.links-rodape ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  gap: 12px;
+  margin: 10px 0px;
+}
+
+.links-rodape li {
+  list-style: none;
+}
+
+/*comentado por MARCOS*/
+/*
+.links-rodape a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: inline-block;
+}
+*/
+
+/*comentado por MARCOS*/
+/* .links-rodape a:hover {
+    background-color: #464646;
+} */
+
+ul.acessos li a {
+  font-size: 11px;
+}
+
+.rodape p {
+  font-size: 11px;
+  margin-bottom: 15px;
+  padding: 3px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 22px;
+  height: 22px;
+  margin: 15px;
+}
+
+.social-icons img:hover {
+  /* AUMENTA A PROPROCAO DO LINK */
+  transform: scale(1.1);
+}
+
+/* DESKTOP - RESPONSIVIDADE */
+
+@media (min-width: 768px) {
+  /* ESTREIAS */
+  .estreias {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  section#estreando {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "texto texto texto"
+      "beleza the_last the_white"
+      "the_pit mickey hacks"
+      "estreia estreia estreia";
+    /* ESPAÇO ENTRE OS CARDS */
+    gap: 2rem;
+    /* LIMITA A LARGURA TOTAL */
+    max-width: 1250px;
+    /* CENTRALIZA O GRID */
+    margin: 0 auto;
+    /* ESPAÇO EXTERNO */
+    padding: 4rem;
+  }
+
+  section#estreando img {
+    width: 100%;
+    /* ALTURA UNIFORME PARA TODAS AS IMAGENS */
+    height: 190px;
+    /* PREENCHE O ESPAÇO CORTANDO PARTES SE NECESSÁRIO  */
+    object-fit: cover;
+    display: block;
+    height: auto;
+  }
+
+  #texto h2 {
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn.btn-primary.estreia {
+    grid-area: estreia;
+    /*comentado por MARCOS*/
+    /* background-color: white;
+        color: black;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        padding: 0.758rem 1.5rem;
+        text-align: center; */
+    margin: 0 auto;
+  }
+}
